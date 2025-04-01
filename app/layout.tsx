@@ -1,11 +1,12 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+import "./globals.css"
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] })
 
-export const metadata = {
-  title: 'Stock Growth Comparison',
-  description: 'Compare stock performance across industries',
+export const metadata: Metadata = {
+  title: "Stock Growth Comparison",
+  description: "Compare stock growth and build portfolios",
 }
 
 export default function RootLayout({
